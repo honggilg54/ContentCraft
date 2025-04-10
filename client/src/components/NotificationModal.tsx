@@ -40,11 +40,11 @@ const NotificationModal = ({ isOpen, onClose }: NotificationModalProps) => {
   const getNotificationIcon = (type: string) => {
     switch (type) {
       case 'expiration':
-        return <span className="material-icons text-warning mr-3">warning</span>;
+        return <span className="material-icons text-amber-600 mr-3">warning</span>;
       case 'auto_consumed':
-        return <span className="material-icons text-primary mr-3">autorenew</span>;
+        return <span className="material-icons text-emerald-600 mr-3">autorenew</span>;
       case 'depleted':
-        return <span className="material-icons text-danger mr-3">shopping_cart</span>;
+        return <span className="material-icons text-rose-600 mr-3">shopping_cart</span>;
       default:
         return <span className="material-icons text-neutral-500 mr-3">notifications</span>;
     }
@@ -63,7 +63,7 @@ const NotificationModal = ({ isOpen, onClose }: NotificationModalProps) => {
         <div className="divide-y">
           {isLoading ? (
             <div className="flex justify-center items-center py-10">
-              <span className="material-icons animate-spin text-primary">refresh</span>
+              <span className="material-icons animate-spin text-emerald-600">refresh</span>
             </div>
           ) : notifications.length === 0 ? (
             <div className="p-4 text-center text-neutral-500">

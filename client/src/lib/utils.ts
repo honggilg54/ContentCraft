@@ -45,11 +45,11 @@ export function getExpirationColor(expirationDate: Date | string): string {
   if (days < 0) {
     return "border-gray-400"; // Expired
   } else if (days <= 1) {
-    return "border-danger"; // Danger - 1 day or less
+    return "border-rose-600"; // Danger - 1 day or less
   } else if (days <= 3) {
-    return "border-warning"; // Warning - 3 days or less
+    return "border-amber-600"; // Warning - 3 days or less
   } else {
-    return "border-primary"; // Primary - more than 3 days
+    return "border-emerald-600"; // Primary - more than 3 days
   }
 }
 
@@ -59,11 +59,11 @@ export function getProgressColor(expirationDate: Date | string): string {
   if (days < 0) {
     return "bg-gray-400"; // Expired
   } else if (days <= 1) {
-    return "bg-danger"; // Danger - 1 day or less
+    return "bg-rose-600"; // Danger - 1 day or less
   } else if (days <= 3) {
-    return "bg-warning"; // Warning - 3 days or less
+    return "bg-amber-600"; // Warning - 3 days or less
   } else {
-    return "bg-primary"; // Primary - more than 3 days
+    return "bg-emerald-600"; // Primary - more than 3 days
   }
 }
 
@@ -73,11 +73,11 @@ export function getIndicatorBgColor(expirationDate: Date | string): string {
   if (days < 0) {
     return "bg-gray-500 text-white"; // Expired
   } else if (days <= 1) {
-    return "bg-danger text-white"; // Danger - 1 day or less
+    return "bg-rose-600 text-white"; // Danger - 1 day or less
   } else if (days <= 3) {
-    return "bg-warning text-white"; // Warning - 3 days or less
+    return "bg-amber-600 text-white"; // Warning - 3 days or less
   } else {
-    return "bg-primary text-white"; // Primary - more than 3 days
+    return "bg-emerald-600 text-white"; // Primary - more than 3 days
   }
 }
 
@@ -87,11 +87,11 @@ export function getIconBgColor(expirationDate: Date | string): string {
   if (days < 0) {
     return "bg-gray-100"; // Expired
   } else if (days <= 1) {
-    return "bg-red-100"; // Danger - 1 day or less
+    return "bg-rose-100"; // Danger - 1 day or less
   } else if (days <= 3) {
-    return "bg-orange-100"; // Warning - 3 days or less
+    return "bg-amber-100"; // Warning - 3 days or less
   } else {
-    return "bg-green-100"; // Primary - more than 3 days
+    return "bg-emerald-100"; // Primary - more than 3 days
   }
 }
 
@@ -101,11 +101,11 @@ export function getIconColor(expirationDate: Date | string): string {
   if (days < 0) {
     return "text-gray-500"; // Expired
   } else if (days <= 1) {
-    return "text-danger"; // Danger - 1 day or less
+    return "text-rose-600"; // Danger - 1 day or less
   } else if (days <= 3) {
-    return "text-warning"; // Warning - 3 days or less
+    return "text-amber-600"; // Warning - 3 days or less
   } else {
-    return "text-primary"; // Primary - more than 3 days
+    return "text-emerald-600"; // Primary - more than 3 days
   }
 }
 

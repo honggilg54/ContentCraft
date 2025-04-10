@@ -89,7 +89,7 @@ const FoodItem = ({
         <div className="flex items-center">
           {isDepleted ? (
             <>
-              <span className="material-icons text-primary text-sm mr-1">shopping_cart</span>
+              <span className="material-icons text-emerald-600 text-sm mr-1">shopping_cart</span>
               <span className="text-xs text-neutral-500">장바구니에 추가됨</span>
             </>
           ) : item.autoConsume ? (

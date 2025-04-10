@@ -96,7 +96,7 @@ const ConsumeItemModal = ({ isOpen, onClose, foodItem, onSuccess }: ConsumeItemM
           
           <Button 
             type="submit" 
-            className="w-full bg-primary text-white py-3 rounded-lg font-medium"
+            className="w-full bg-emerald-600 text-white py-3 rounded-lg font-medium"
             disabled={consumeMutation.isPending}
           >
             {consumeMutation.isPending ? "처리 중..." : "사용 완료"}

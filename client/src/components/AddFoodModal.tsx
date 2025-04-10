@@ -210,7 +210,7 @@ const AddFoodModal = ({ isOpen, onClose, onSuccess }: AddFoodModalProps) => {
           
           <Button 
             type="submit" 
-            className="w-full bg-primary text-white py-3 rounded-lg font-medium"
+            className="w-full bg-emerald-600 text-white py-3 rounded-lg font-medium"
             disabled={createMutation.isPending}
           >
             {createMutation.isPending ? "등록 중..." : "등록하기"}
