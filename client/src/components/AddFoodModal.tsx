@@ -91,9 +91,6 @@ const AddFoodModal = ({ isOpen, onClose, onSuccess }: AddFoodModalProps) => {
       <DialogContent className="max-w-md max-h-[90vh] overflow-auto">
         <DialogHeader>
           <DialogTitle className="text-lg font-bold">음식 등록</DialogTitle>
-          <DialogClose className="absolute right-4 top-4 p-1" onClick={handleClose}>
-            <span className="material-icons">close</span>
-          </DialogClose>
         </DialogHeader>
         
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">

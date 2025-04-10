@@ -55,9 +55,6 @@ const NotificationModal = ({ isOpen, onClose }: NotificationModalProps) => {
       <DialogContent className="max-w-md max-h-[80vh] overflow-auto">
         <DialogHeader>
           <DialogTitle className="text-lg font-bold">알림</DialogTitle>
-          <DialogClose className="absolute right-4 top-4 p-1">
-            <span className="material-icons">close</span>
-          </DialogClose>
         </DialogHeader>
         
         <div className="divide-y">
