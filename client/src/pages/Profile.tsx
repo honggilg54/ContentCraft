@@ -20,7 +20,7 @@ const Profile = () => {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4">
-          <h1 className="text-xl font-bold text-primary">내 정보</h1>
+          <h1 className="text-xl font-bold text-emerald-600">내 정보</h1>
         </div>
       </header>
 

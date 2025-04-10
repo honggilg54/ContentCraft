@@ -99,7 +99,7 @@ const FoodList = () => {
       <section className="container mx-auto px-4">
         {isLoading ? (
           <div className="flex justify-center items-center py-10">
-            <span className="material-icons animate-spin text-primary">refresh</span>
+            <span className="material-icons animate-spin text-emerald-600">refresh</span>
           </div>
         ) : error ? (
           <div className="text-center py-10 text-red-500">

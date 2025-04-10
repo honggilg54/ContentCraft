@@ -50,7 +50,7 @@ const SearchAndFilter = ({
             key={category.id}
             className={`px-4 py-1.5 rounded-full text-sm whitespace-nowrap shadow-sm ${
               selectedCategory === category.id 
-                ? "bg-primary text-white" 
+                ? "bg-emerald-600 text-white" 
                 : "bg-white text-neutral-900"
             }`}
             onClick={() => setSelectedCategory(category.id)}

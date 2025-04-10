@@ -50,7 +50,7 @@ const ShoppingCart = () => {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4">
-          <h1 className="text-xl font-bold text-primary">장바구니</h1>
+          <h1 className="text-xl font-bold text-emerald-600">장바구니</h1>
         </div>
       </header>
 
@@ -58,7 +58,7 @@ const ShoppingCart = () => {
       <section className="container mx-auto px-4 py-4">
         {isLoading ? (
           <div className="flex justify-center items-center py-10">
-            <span className="material-icons animate-spin text-primary">refresh</span>
+            <span className="material-icons animate-spin text-emerald-600">refresh</span>
           </div>
         ) : error ? (
           <div className="text-center py-10 text-red-500">
