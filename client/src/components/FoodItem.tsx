@@ -94,7 +94,7 @@ const FoodItem = ({
             </>
           ) : item.autoConsume ? (
             <>
-              <span className="material-icons text-primary text-sm mr-1">autorenew</span>
+              <span className="material-icons text-emerald-600 text-sm mr-1">autorenew</span>
               <span className="text-xs text-neutral-500">
                 자동소비: {item.dailyConsumptionAmount}{item.dailyConsumptionUnit}/일
               </span>
@@ -109,14 +109,14 @@ const FoodItem = ({
         <div className="flex space-x-2">
           {showDeleteButton && (
             <button 
-              className="bg-red-100 text-danger text-xs px-2 py-1 rounded-lg"
+              className="bg-rose-100 text-rose-600 text-xs px-2 py-1 rounded-lg"
               onClick={onDeleteClick}
             >
               삭제
             </button>
           )}
           {isDepleted ? (
-            <button className="bg-primary text-white text-xs px-2 py-1 rounded-lg">
+            <button className="bg-emerald-600 text-white text-xs px-2 py-1 rounded-lg">
               재구매
             </button>
           ) : (
