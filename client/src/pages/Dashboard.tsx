@@ -96,7 +96,7 @@ const Dashboard = () => {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-primary">남은 음식 확인</h1>
+          <h1 className="text-xl font-bold text-emerald-600">남은 음식 확인</h1>
           <div className="flex space-x-3">
             <button 
               className="p-2 rounded-full hover:bg-gray-100"

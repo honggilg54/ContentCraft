@@ -11,3 +11,29 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+@layer components {
+  .text-warning {
+    @apply text-amber-600;
+  }
+  
+  .bg-warning {
+    @apply bg-amber-600;
+  }
+  
+  .text-danger {
+    @apply text-rose-600;
+  }
+  
+  .bg-danger {
+    @apply bg-rose-600;
+  }
+  
+  .border-warning {
+    @apply border-amber-600;
+  }
+  
+  .border-danger {
+    @apply border-rose-600;
+  }
+}

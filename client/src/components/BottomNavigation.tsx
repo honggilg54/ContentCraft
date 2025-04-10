@@ -25,7 +25,7 @@ const BottomNavigation = () => {
           </a>
         </Link>
         <button 
-          className="bg-primary text-white rounded-full w-14 h-14 flex items-center justify-center -mt-5 shadow-lg"
+          className="bg-emerald-600 text-white rounded-full w-14 h-14 flex items-center justify-center -mt-5 shadow-lg"
           onClick={handleAddClick}
         >
           <span className="material-icons">add</span>
