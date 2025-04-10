@@ -84,11 +84,11 @@ export const insertShoppingCartItemSchema = createInsertSchema(shoppingCartItems
 
 // Zod schemas with additional validation
 export const foodItemWithValidationSchema = insertFoodItemSchema.extend({
-  quantity: z.number().min(0, "Quantity cannot be negative"),
+  quantity: z.coerce.number().min(0, "수량은 0보다 작을 수 없습니다"),
   expirationDate: z.coerce.date().refine(date => date >= new Date(new Date().setHours(0, 0, 0, 0)), {
-    message: "Expiration date cannot be in the past"
+    message: "유통기한은 오늘 이후여야 합니다"
   }),
-  dailyConsumptionAmount: z.number().min(0, "Consumption amount cannot be negative"),
+  dailyConsumptionAmount: z.coerce.number().min(0, "소비량은 0보다 작을 수 없습니다"),
 });
 
 // Types

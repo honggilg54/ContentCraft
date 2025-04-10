@@ -53,7 +53,7 @@ const AddFoodModal = ({ isOpen, onClose, onSuccess }: AddFoodModalProps) => {
     mutationFn: (data: FormValues) => apiRequest('POST', '/api/food-items', {
       ...data,
       autoConsume,
-      // Make sure numerical fields are numbers, not strings
+      // 이미 zod에서 coerce.number()를 사용하지만 안전을 위해 변환 유지
       quantity: Number(data.quantity),
       dailyConsumptionAmount: Number(data.dailyConsumptionAmount),
     }),
